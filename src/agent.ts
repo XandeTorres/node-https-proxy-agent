@@ -105,7 +105,7 @@ export default class HttpsProxyAgent extends Agent {
 			socket.setTimeout(this.timeout);
 
 			socket.on('timeout', () => {
-				//console.log('socket timeout');
+				//console.log('https-proxy-agent socket timeout', this.timeout);
 				socket.end();
 			});
 		}
